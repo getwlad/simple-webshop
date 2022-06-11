@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Simple Shop</title>
+  </head>
+  <body>
+    <div class="root">
+      <nav class="menu">
+        <button class="show-hide-menu">
+          <img src="./assets/icons/menu.svg" />
+        </button>
+        <ul class="opt-menu">
+          <li class="options"><a href="#">Home</a></li>
+          <li class="options"><a href="#">Produtos</a></li>
+          <li class="options"><a href="#">Contato</a></li>
+        </ul>
+        <div class="busca">
+          <input
+            type="text"
+            placeholder="Digite o nome do produto"
+            class="ipt-busca"
+          />
+          <button class="btn-busca">Buscar</button>
+        </div>
+        <div class="barra-login">
+          <button class="btn-registrar">Registrar</button>
+          <button class="btn-login">Login</button>
+        </div>
+        <div class="cart">
+          <button class="btn-cart">
+            <img src="./assets/icons/cart-minus.svg" />
+          </button>
+        </div>
+        <div class="full-cart">
+          <p>Seu carrinho</p>
+          <ul class="produtos-cart"></ul>
+          <div class="total">
+            <p id="total">Total R$ 0</p>
+            <button class="btn-checkout">
+              <img src="./assets/icons/basket-check-outline.svg" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <aside class="filtros">
+        <div class="ordenar">
+          <h5 class="p-ordenar">Ordenar por</h5>
+          <p class="p-ordenar">Preço</p>
+          <button class="btn-ordenar" id="crescente">Crescente</button
+          ><button class="btn-ordenar" id="decrescente">Decrescente</button>
+          <p class="p-ordenar">Nome</p>
+          <button class="btn-ordenar" id="az">A-Z</button>
+        </div>
+        <div class="filtrar">
+          <h5 class="p-ordenar">Filtrar por</h5>
+          <p class="p-ordenar">Preço</p>
+          <input type="range" class="ipt-range" min="0" max="9999" />
+          <span class="s-range" id="p-range">Sem filtro</span>
+          <input
+            type="number"
+            placeholder="Min"
+            class="ipt-minmax"
+            id="ipt-min"
+          />
+          <span>-</span>
+          <input
+            type="number"
+            placeholder="Max"
+            class="ipt-minmax"
+            id="ipt-max"
+          />
+          <button class="btn-ordenar" id="btn-minmax">Ok</button>
+          <button class="limpar-filtros">Limpar Filtros</button>
+        </div>
+      </aside>
+      <section class="main"></section>
+      <footer class="t-foot">
+        <ul>
+          <li><a a href="#">Home</a></li>
+          <li><a a href="#">Produtos</a></li>
+          <li><a a href="#">Contato</a></li>
+          <li><a a href="#">Sobre</a></li>
+          <li><a a href="#">Frete</a></li>
+        </ul>
+        <p>Rua Exemplo QD 0 LT 0 Urbano, Cidade, Brasil. 123456-789</p>
+      </footer>
+    </div>
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/index.js" type="module"></script>
+  </body>
+</html>

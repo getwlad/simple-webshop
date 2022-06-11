@@ -1,0 +1,12 @@
+@import url("./cartBtn/index.css");
+@import url("./fullCart/index.css");
+@import url("./loginBar/index.css");
+@import url("./menuOptions/index.css");
+@import url("./seachBar/index.css");
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  grid-column: 1 / 3;
+}

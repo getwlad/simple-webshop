@@ -1,0 +1,53 @@
+@import url("./filtros/filtrar.css");
+@import url("./filtros/ordernar.css");
+.filtros {
+  grid-row: 2 / 2;
+  grid-column: 1/1;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 10px;
+}
+.btn-ordenar,
+.limpar-filtros {
+  margin: 5px;
+  width: 100px;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.limpar-filtros {
+  width: 130px;
+}
+.ordenar,
+.filtrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p-ordenar {
+  margin: 10px;
+  font-size: 1.1em;
+}
+.btn-ordenar:hover,
+.limpar-filtros:hover {
+  background-color: #fafafa;
+}
+.btn-ordenar:active,
+.limpar-filtros:active {
+  background-color: #fefefe;
+}
+
+@media screen and (max-width: 1320px) {
+  .limpar-filtros {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .filtros {
+    display: none;
+    grid-column: 0 / 0;
+    grid-row: 0 / 0;
+  }
+}

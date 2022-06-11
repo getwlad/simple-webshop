@@ -1,0 +1,25 @@
+@import url("./titulo.css");
+@import url("./add-cart.css");
+@import url("./preco.css");
+.product {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  padding: 10px;
+  height: 350px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.product > img {
+  height: 150px;
+  width: 250px;
+}
+@media screen and (max-width: 1300px) {
+  .product {
+  }
+}

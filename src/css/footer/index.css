@@ -1,0 +1,33 @@
+.t-foot {
+  /* background-color: blue; */
+  grid-column: 1 / 3;
+  grid-row: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.t-foot > ul {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+}
+.t-foot > ul > li {
+  padding: 5px;
+  margin: 5px;
+}
+
+.t-foot > p {
+  margin: 0px 10px;
+  align-self: center;
+}
+
+@media screen and (max-width: 728px) {
+  .t-foot > ul > li {
+    width: 45%;
+  }
+}

@@ -1,0 +1,14 @@
+.preco {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+}
+.preco-de {
+  font-size: 0.8em;
+  text-decoration: line-through;
+  color: red;
+}
+.preco-por {
+  font-size: 1.3em;
+  color: black;
+}

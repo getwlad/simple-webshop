@@ -1,0 +1,45 @@
+[
+
+    {
+      "id": 1,
+      "title": "Calça Jeans",
+      "precoDe": 100.00,
+      "precoPor": 90.00,
+      "img": "https://lojaspompeia.vteximg.com.br/arquivos/ids/687428-465-620/147789-calca-jeans-adulto-gf-premium-azul2.jpg?v=637834791021000000"
+    },
+    {
+      "id": 2,
+      "title": "Bota Feminina",
+      "precoDe": 69.99,
+      "precoPor": 49.99,
+      "img": "https://cf.shopee.com.br/file/d736b1d8162af798e0e5e4c9773948fd"
+    },
+      {
+        "id": 3,
+        "title": "Celular",
+        "precoDe": 1299.99,
+        "precoPor": 899.99,
+        "img": "https://m.media-amazon.com/images/I/611MiY9kb5L._AC_SX425_.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Smart Tv",
+        "precoDe": 2499.99,
+        "precoPor": 2199.99,
+        "img": "https://images.samsung.com/is/image/samsung/africa-pt-fhd-t5300-ua40t5300auxly-frontblack-243728953?$2160_1728_PNG$"
+      },
+      {
+        "id": 5,
+        "title": "Console",
+        "precoDe": 5499.9,
+        "precoPor": 4999.99,
+        "img": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+      },
+      {
+        "id": 6,
+        "title": "Fones de ouvido",
+        "precoDe": 199.99,
+        "precoPor": 99.99,
+        "img": "https://s2.glbimg.com/Sn6W-EkSmbYqzQwnv7spAeTE7Hs=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/y/r/ImoYJ6R8GBr9676JwBzA/air-pods-pro-imagem-2.jpg"
+      }
+]
