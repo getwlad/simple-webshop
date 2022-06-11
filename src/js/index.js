@@ -124,7 +124,6 @@ $(async () => {
   $(".ipt-busca").keydown(function (e) {
     const enterKey = 13;
     const escKey = 27;
-    console.log(e.which);
     if (enterKey === e.which) {
       $(".btn-busca").trigger("click");
     } else if (escKey === e.which) {
