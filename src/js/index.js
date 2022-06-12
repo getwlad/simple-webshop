@@ -21,7 +21,7 @@ $(async () => {
 
   //Atualiza a lista de  produtos no html
   const updateProducts = (products) => {
-    $(".main").empty();
+    $(".product").remove();
     products.map((product) => {
       createProduct(product);
     });
@@ -33,7 +33,7 @@ $(async () => {
 
   updateProducts(products);
 
-  $(".btn-cart").click((e) => $(".full-cart").toggle());
+  $(".btn-cart").click((e) => $(".full-cart").fadeToggle());
 
   //-----------Filtros----------------
 
@@ -128,6 +128,22 @@ $(async () => {
       $(".btn-busca").trigger("click");
     } else if (escKey === e.which) {
       $(this).val("");
+    }
+  });
+  //abrir menu filtros
+  $(".btn-abrir").on("click", (e) => {
+    const filtros = $(".filtros");
+    if (filtros.hasClass("ativo")) {
+      filtros.removeClass("ativo");
+      filtros.fadeToggle("fast");
+    } else {
+      filtros.fadeToggle("fast");
+      filtros
+        .css("display", "block")
+        .css("position", "fixed")
+        .css("background-color", "transparent")
+        .css("top", "100px");
+      filtros.addClass("ativo");
     }
   });
 });

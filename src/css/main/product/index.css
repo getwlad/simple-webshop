@@ -1,6 +1,6 @@
-@import url("./titulo.css");
+@import url("./title.css");
 @import url("./add-cart.css");
-@import url("./preco.css");
+@import url("./price.css");
 .product {
   background-color: #ffffff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
