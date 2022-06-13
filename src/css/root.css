@@ -28,6 +28,9 @@ a {
   list-style: none;
   color: black;
 }
+p {
+  color: black;
+}
 img {
   border-radius: 10%;
 }
