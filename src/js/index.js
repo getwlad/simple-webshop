@@ -29,8 +29,8 @@ $(async () => {
   };
   // obtem os produtos inicialmente
   const products = await getProducts();
-  let sortedProducts = await getProducts();
-
+  let sortedProducts = [...products];
+  let filteredProducts = [...products];
   updateProducts(products);
 
   $(".btn-cart").click((e) => $(".full-cart").fadeToggle());
@@ -62,24 +62,37 @@ $(async () => {
 
   //Filtro de busca
   $(".btn-busca").click((e) => {
-    sortedProducts = searchProd(products);
-    updateProducts(sortedProducts);
+    const ordExist = $(".selected"); //recebe a classe de ordenação, se existir algum elemento então recebemos os produtos já filtrados
+    const rangePriceEx = $("#rangeAtivo");
+    const minMaxEx = $("#minMaxAtivo");
+    let searchedProducts = [...products];
+    if (ordExist.length > 0) {
+      searchedProducts = [...sortedProducts];
+    }
+    if (minMaxEx.length > 0 || rangePriceEx.length > 0) {
+      searchedProducts = [...filteredProducts];
+    }
+    searchedProducts = searchProd(searchedProducts);
+
+    updateProducts(searchedProducts);
   });
 
   //------Filtros de preço
 
   //Filtro do range
   $(".ipt-range").on("input", (e) => {
-    let newerProd = filterRange(e, products, sortedProducts);
-    updateProducts(newerProd);
+    filteredProducts = filterRange(e, products, sortedProducts);
+    updateProducts(filteredProducts);
+    searchActive();
     e.target.setAttribute("id", "rangeAtivo");
   });
 
   // Filtro minmax
   $("#btn-minmax").click((e) => {
-    const newerProd = filterminMax(products, sortedProducts);
+    filteredProducts = filterminMax(products, sortedProducts);
     e.target.setAttribute("id", "minMaxAtivo");
-    updateProducts(newerProd);
+    updateProducts(filteredProducts);
+    searchActive();
   });
 
   // Limpar filtros
@@ -88,12 +101,13 @@ $(async () => {
     if (ordeN.length > 0) {
       ordeN.trigger("click");
     }
+    $(".ipt-busca").val("");
   };
 
   $(".limpar-filtros").click((e) => {
     clearFilters();
-    updateProducts(products);
     veryfiOrden(e);
+    updateProducts(products);
   });
 
   //--------Funções complementares para os filtros
@@ -104,6 +118,12 @@ $(async () => {
     }
     if (document.getElementById("minMaxAtivo")) {
       $("#minMaxAtivo").trigger("click");
+    }
+    searchActive();
+  };
+  const searchActive = () => {
+    if ($(".ipt-busca").val() != "") {
+      $(".btn-busca").trigger("click");
     }
   };
 
@@ -133,17 +153,10 @@ $(async () => {
   //abrir menu filtros
   $(".btn-abrir").on("click", (e) => {
     const filtros = $(".filtros");
-    if (filtros.hasClass("ativo")) {
-      filtros.removeClass("ativo");
-      filtros.fadeToggle("fast");
+    if (filtros.hasClass("barraFiltros")) {
+      filtros.removeClass("barraFiltros");
     } else {
-      filtros.fadeToggle("fast");
-      filtros
-        .css("display", "block")
-        .css("position", "fixed")
-        .css("background-color", "transparent")
-        .css("top", "100px");
-      filtros.addClass("ativo");
+      filtros.addClass("barraFiltros");
     }
   });
 });

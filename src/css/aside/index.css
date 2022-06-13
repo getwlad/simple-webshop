@@ -42,16 +42,17 @@
   background-color: #fefefe;
 }
 
-@media screen and (max-width: 1320px) {
-  .limpar-filtros {
-    display: none;
-  }
-}
 @media screen and (max-width: 1200px) {
   .filtros {
     display: none;
   }
   .filtros {
     z-index: 99;
+  }
+  .barraFiltros {
+    display: block;
+    position: fixed;
+    background-color: transparent;
+    top: 100px;
   }
 }
