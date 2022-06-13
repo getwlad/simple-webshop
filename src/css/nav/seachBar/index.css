@@ -12,6 +12,8 @@
   padding: 10px;
   font-size: 15px;
   margin: 0px 10px;
+  outline: none;
+  border: none;
 }
 .ipt-busca:focus {
   outline: none;
@@ -19,8 +21,8 @@
 }
 .btn-busca {
   position: absolute;
-  right: 25%;
-  height: 37px;
+  right: 27%;
+  height: 40px;
   width: 50px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 18px;
@@ -36,6 +38,11 @@
   background-color: #d2d2d2;
 }
 
+@media screen and (max-width: 900px) {
+  .btn-busca {
+    right: 25%;
+  }
+}
 @media screen and (max-width: 758px) {
   .busca {
     width: 400px;

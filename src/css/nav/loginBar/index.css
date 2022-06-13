@@ -8,26 +8,27 @@
   width: 90px;
   height: 40px;
   border-radius: 10px;
+  border: none;
 }
 .btn-registrar {
-  background-color: #f15412;
+  background-color: #ff4040;
   color: white;
 }
 .btn-registrar:hover {
-  background-color: #b15412;
+  background-color: #ff5050;
 }
 .btn-registrar:active {
-  background-color: #a15412;
+  background-color: #ff6060;
 }
 .btn-login {
-  background-color: #541690;
+  background-color: #ff2400;
   color: white;
 }
 .btn-login:hover {
-  background-color: #441690;
+  background-color: #ff3400;
 }
 .btn-login:active {
-  background-color: #341690;
+  background-color: #ff4400;
 }
 @media screen and (max-width: 728px) {
   .barra-login {
