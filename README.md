@@ -1,6 +1,6 @@
 # Simple Webshop
 Um site comercial simples com filtros.
-A lista de produtos são obtidos a partir do arquivo db.json na pasta products.
+A lista de produtos é obtida a partir do arquivo db.json na pasta products.
  - O que se pode fazer?\
   Buscar um produto pelo nome.\
   Adicionar produtos ao carrinho, é possível ver o valor total do carrinho.\
