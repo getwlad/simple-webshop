@@ -15,7 +15,10 @@ $(async () => {
 
   //Obtém a lista de produtos a partir do json.
   const getProducts = async () => {
-    const db = await $.getJSON("./products/db.json");
+    const db = await $.getJSON(
+      "https://rest-api-products-wladmir.herokuapp.com/products"
+    );
+    console.log(db);
     return db;
   };
 

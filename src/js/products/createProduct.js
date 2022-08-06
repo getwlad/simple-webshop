@@ -6,15 +6,15 @@ const createProduct = (product) => {
   //titulo
   const divTitulo = createElement("div", "titulo");
   const titulo = createElement("h5");
-  titulo.append(product.title);
+  titulo.append(product.name);
   divTitulo.append(titulo);
   //preco
   const divPreco = createElement("div", "preco");
-  const precoDe = createElement("span", "preco-de");
+  // const precoDe = createElement("span", "preco-de");
   const precoPor = createElement("span", "preco-por");
-  precoDe.append(("R$ " + product.precoDe.toFixed(2)).replace(".", ","));
-  precoPor.append(("R$ " + product.precoPor.toFixed(2)).replace(".", ","));
-  divPreco.append(precoDe, precoPor);
+  // precoDe.append(("R$ " + product.precoDe.toFixed(2)).replace(".", ","));
+  precoPor.append(("R$ " + product.price.toFixed(2)).replace(".", ","));
+  divPreco.append(precoPor);
   //add-cart
   const addCart = createElement("div", "add-cart");
   const btnCart = createElement("button", "btn-add-cart");
