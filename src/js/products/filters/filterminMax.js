@@ -10,13 +10,13 @@ const filterminMax = (products, newProducts) => {
   let newerProd = products;
   if (document.querySelector(".selected")) {
     newerProd = newProducts.filter((product) => {
-      if (product.precoPor >= min && product.precoPor <= max) {
+      if (product.price >= min && product.price <= max) {
         return product;
       }
     });
   } else {
     newerProd = products.filter((product) => {
-      if (product.precoPor >= min && product.precoPor <= max) {
+      if (product.price >= min && product.price <= max) {
         return product;
       }
     });

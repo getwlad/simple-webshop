@@ -4,7 +4,7 @@ String.prototype.indexOfCaseIns = function (searchValue, fromIndex) {
 const searchProd = (products) => {
   return products.filter((product) => {
     const prodSearched = $(".ipt-busca").val();
-    if (product.title.indexOfCaseIns(prodSearched) >= 0) {
+    if (product.name.indexOfCaseIns(prodSearched) >= 0) {
       return product;
     }
   });

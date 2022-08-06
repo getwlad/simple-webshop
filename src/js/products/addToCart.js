@@ -13,9 +13,9 @@ const addToCart = (e, products) => {
   });
 };
 const productToCart = (product) => {
-  const name = createElement("span").append(product.title);
+  const name = createElement("span").append(product.name);
   const preco = createElement("span", "preco-cart").append(
-    ("R$ " + product.precoPor.toFixed(2)).replace(".", ",")
+    ("R$ " + product.price.toFixed(2)).replace(".", ",")
   );
   const prod = createElement("li", "produto-cart").append(name, preco);
   $(".produtos-cart").append(prod);
@@ -26,7 +26,7 @@ const updateTotal = (product) => {
   let str = $("#total").text().replace(",", ".");
   const regex = /[+-]?\d+(\.\d+)?/g;
   let total = parseFloat(str.match(regex));
-  total = (total + product.precoPor).toFixed(2);
+  total = (total + product.price).toFixed(2);
   str = ("Total: R$" + total).replace(".", ",");
   $("#total").contents().remove();
   $("#total").append(str);
