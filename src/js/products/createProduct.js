@@ -10,11 +10,11 @@ const createProduct = (product) => {
   divTitulo.append(titulo);
   //preco
   const divPreco = createElement("div", "preco");
-  // const precoDe = createElement("span", "preco-de");
+  const precoDe = createElement("span", "preco-de");
   const precoPor = createElement("span", "preco-por");
-  // precoDe.append(("R$ " + product.precoDe.toFixed(2)).replace(".", ","));
+  precoDe.append(("R$ " + (product.price + 100).toFixed(2)).replace(".", ","));
   precoPor.append(("R$ " + product.price.toFixed(2)).replace(".", ","));
-  divPreco.append(precoPor);
+  divPreco.append(precoDe, precoPor);
   //add-cart
   const addCart = createElement("div", "add-cart");
   const btnCart = createElement("button", "btn-add-cart");
