@@ -12,6 +12,7 @@ const createProduct = (product) => {
   const divPreco = createElement("div", "preco");
   const precoDe = createElement("span", "preco-de");
   const precoPor = createElement("span", "preco-por");
+
   precoDe.append(("R$ " + (product.price + 100).toFixed(2)).replace(".", ","));
   precoPor.append(("R$ " + product.price.toFixed(2)).replace(".", ","));
   divPreco.append(precoDe, precoPor);

@@ -18,7 +18,9 @@ $(async () => {
     const db = await $.getJSON(
       "https://rest-api-products-wladmir.herokuapp.com/products"
     );
-    console.log(db);
+    db.map((product) => {
+      product.price = Number(product.price);
+    });
     return db;
   };
 
@@ -31,6 +33,7 @@ $(async () => {
     addFunctionToCart();
   };
   // obtem os produtos inicialmente
+
   const products = await getProducts();
   let sortedProducts = [...products];
   let filteredProducts = [...products];
