@@ -21,6 +21,7 @@ $(async () => {
     db.map((product) => {
       product.price = Number(product.price);
     });
+    $(".img-loads").remove();
     return db;
   };
 

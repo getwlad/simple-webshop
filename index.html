@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <title>Simple Shop</title>
   </head>
   <body>
     <div class="root">
       <nav class="menu">
         <button class="show-hide-menu">
-          <img src="./assets/icons/menu.svg" />
+          <i class="material-symbols-outlined"> menu </i>
         </button>
         <ul class="opt-menu">
-          <li class="options"><a href="#">Home</a></li>
-          <li class="options"><a href="#">Produtos</a></li>
-          <li class="options"><a href="#">Contato</a></li>
+          <li class="options">
+            <a href="#"
+              ><i class="material-symbols-outlined nav-title"> home </i>Home</a
+            >
+          </li>
+          <li class="options">
+            <a href="#"
+              ><i class="material-symbols-outlined nav-title"> shopping_bag </i
+              >Produtos</a
+            >
+          </li>
+          <li class="options">
+            <a href="#"
+              ><i class="material-symbols-outlined nav-title"> info </i
+              >Contato</a
+            >
+          </li>
         </ul>
         <div class="busca">
           <input
@@ -24,7 +42,9 @@
             placeholder="Digite o nome do produto"
             class="ipt-busca"
           />
-          <button class="btn-busca">Buscar</button>
+          <button class="btn-busca">
+            <i class="material-symbols-outlined"> search </i>
+          </button>
         </div>
         <div class="barra-login">
           <button class="btn-registrar">Registrar</button>
@@ -32,7 +52,7 @@
         </div>
         <div class="cart">
           <button class="btn-cart">
-            <img src="./assets/icons/cart-minus.svg" />
+            <i class="material-symbols-outlined"> shopping_cart </i>
           </button>
         </div>
         <div class="full-cart">
@@ -78,13 +98,15 @@
           <button class="limpar-filtros">Limpar Filtros</button>
         </div>
       </aside>
+      <img src="./assets/loader.gif" class="img-loads" />
       <section class="main">
         <div class="abrir-menu">
           <button class="btn-abrir">
-            <img src="./assets/icons/menu-open.svg" />
+            <i class="material-symbols-outlined"> menu_open </i>
           </button>
         </div>
       </section>
+
       <footer class="t-foot">
         <ul>
           <li><a a href="#">Home</a></li>

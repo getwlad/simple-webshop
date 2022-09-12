@@ -6,20 +6,23 @@
   width: 100px;
 }
 .btn-cart {
-  width: 100%;
-  height: 60%;
+  width: 70px;
+  height: 40px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
 }
 .btn-cart:hover,
 .btn-add-cart:hover,
 .btn-checkout:hover {
-  background-color: #b5e550;
+  background-color: #80b809;
 }
 .btn-cart:active,
 .btn-add-cart:active,
 .btn-checkout:active {
-  background-color: #abc32f;
+  background-color: #70a809;
 }
 
 @media screen and (max-width: 728px) {

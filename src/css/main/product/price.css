@@ -4,11 +4,11 @@
   flex-direction: column;
 }
 .preco-de {
-  font-size: 0.8em;
+  font-size: 1rem;
   text-decoration: line-through;
   color: red;
 }
 .preco-por {
-  font-size: 1.3em;
-  color: black;
+  font-size: 1.3rem;
+  color: green;
 }

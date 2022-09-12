@@ -6,7 +6,7 @@
   grid-column: 1/1;
   background-color: #f5f5f5;
   color: black;
-  padding: 10px;
+  padding: 5px;
 }
 .btn-ordenar,
 .limpar-filtros {
@@ -15,7 +15,10 @@
   border-radius: 10px;
   height: 40px;
   background-color: #f0f0f0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: black;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0.2em #222222;
 }
 .limpar-filtros {
   width: 130px;
@@ -35,7 +38,7 @@
 }
 .btn-ordenar:hover,
 .limpar-filtros:hover {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 .btn-ordenar:active,
 .limpar-filtros:active {
