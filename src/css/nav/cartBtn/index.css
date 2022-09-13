@@ -17,19 +17,22 @@
 .btn-cart:hover,
 .btn-add-cart:hover,
 .btn-checkout:hover {
-  background-color: #80b809;
+  background-color: #93d603;
 }
 .btn-cart:active,
 .btn-add-cart:active,
 .btn-checkout:active {
   background-color: #70a809;
 }
+.prod-added {
+  align-self: center;
+}
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 768px) {
   .btn-cart:hover,
   .btn-add-cart:hover,
   .btn-checkout:hover {
-    background-color: #f0f0f0;
+    background-color: transparent;
   }
   .btn-cart:active,
   .btn-add-cart:active,

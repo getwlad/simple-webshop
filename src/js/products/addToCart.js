@@ -6,11 +6,19 @@ const addToCart = (e, products) => {
   } else {
     id = e.target.id;
   }
+  const btn = $(`#${id}`);
+  const btnContent = btn.html();
   products.forEach((product) => {
     if (product.id == id) {
       productToCart(product);
     }
   });
+  btn.html(
+    `<span>Adicionado</span><i class="material-symbols-outlined"> done </i>`
+  );
+  setTimeout((e) => {
+    btn.html(btnContent);
+  }, 1000);
 };
 const productToCart = (product) => {
   const name = createElement("span").append(product.name);

@@ -22,9 +22,9 @@ const createProduct = (product) => {
   btnCart.attr({ id: product.id });
   const textCart = createElement("span");
   textCart.append("Adicionar ao carrinho");
-  const imgCart = createElement("img", "btn-add-img");
-  imgCart.attr({ src: "./assets/icons/cart-arrow-down.svg" });
-  btnCart.append(textCart, imgCart);
+  const iconCart = createElement("i", "btn-add-img material-symbols-outlined");
+  iconCart.text("add_shopping_cart");
+  btnCart.append(textCart, iconCart);
   addCart.append(btnCart);
   //Div principal
   const divProduto = createElement("div", "product");

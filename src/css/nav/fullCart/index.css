@@ -32,6 +32,7 @@
   justify-content: space-between;
   font-size: 1.1em;
   align-items: center;
+  flex-direction: column;
 }
 
 .total > button {
@@ -40,6 +41,14 @@
   width: 100px;
   height: 25px;
   margin: 2px 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.total button i {
+  vertical-align: top;
 }
 .total > button > img {
   height: 20px;

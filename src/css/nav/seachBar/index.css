@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .btn-busca {
+  .busca {
   }
 }
 @media screen and (max-width: 758px) {
@@ -52,6 +52,11 @@
   .ipt-busca {
     width: 85%;
   }
-  .btn-busca {
+  .btn-busca:hover {
+    background-color: #fafafa;
+    color: black;
+  }
+  .btn-busca:active {
+    background-color: red;
   }
 }
